@@ -1,6 +1,3 @@
-*{
-border: 3px solid purple;
-}
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -30,6 +27,7 @@ a:hover {
 body {
   margin: 0;
   display: flex;
+  flex-direction: column;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
@@ -100,6 +98,69 @@ align-content: center;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.menu {
+  width: Fixed (1,920px)px;
+  height: Hug (94px)px;
+  top: 1080px;
+  padding: 26px 426px 26px 426px;
+  gap: 10px;
+  opacity: 0px;
+}
+.menu-item {
+  display: flex;
+  width: 1068px;
+  height: 42px;
+  justify-content: space-between;
+  font-size: 18px;
+}
+.Lezzetus {
+  background-image: url(./public/assets/iteration-2/cta/kart-1.png);
+  width: 531px;
+  height: 448.75px;
+  gap: 0px;
+  opacity: 0px;
+  border-radius: 20px 20px 20px 20px;
+}
+.baslık-lezzetus {
+  width: 288.18px;
+  height: 148px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Quattrocento;
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 72px;
+  text-align: left;
+  color: #FFFFFF;
+  margin: 30px 30px;
+}
+.baslık-position {
+  width: 350px;
+  height: 27px;
+  top: 151.75px;
+  left: -10px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Barlow;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 26.76px;
+  text-align: left;
+  margin: 30px 30px;
+  color: #FFFFFF;
+}
+.btn2 {
+  width: 138px;
+  height: 48px;
+  top: 203.75px;
+  left: -10px;
+  padding: 3px 18px 0px 18px;
+  gap: 0px;
+  border-radius: 50px 50px 50px 50px;
+  opacity: 0px;
+  margin: 0px 30px;
+  color: #CE2829;
 }
 
 h1 {
