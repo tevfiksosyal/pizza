@@ -1,3 +1,7 @@
+*{
+border: 3px solid purple;
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -29,6 +33,73 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+}
+
+header {
+  background-image: url(./public/assets/iteration-1/home-banner.png);
+  width: 1920px;
+  height: 1080px;
+  margin: auto;
+}
+.header-logo {
+width: 363px;
+height: 50px;
+top: 56px;
+left: 778px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+justify-content: center;
+margin: 5% auto;
+text-align: center;
+align-content: center;
+}
+.header-content{
+  width: 586px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0% auto;
+  text-align: center;
+}
+.header-content h2 {
+  width: 550px;
+  height: 50px;
+  font-family: satisfy;
+  color: #FDC913;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  size: 32px;
+}
+.header-content h3 {
+  width: 550px;
+  height: 400px;
+  font-family: Roboto condensed;
+  font-size: 60px;
+  font-weight: 300;  
+  line-height: 100px;
+  letter-spacing: 1.5px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0;
+}
+.btn {
+  width: 193.27px;
+  height: 56px;
+  top: 243.27px;
+  left: 196.36px;
+  padding: 3.73px 50.16px 0.27px 49.64px;
+  gap: 0px;
+  border-radius: 50px 50px 50px 50px;
+  opacity: 0px;
+  color: black;
+  background-color:#FDC913;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
