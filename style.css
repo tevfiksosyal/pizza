@@ -1,60 +1,24 @@
-
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+html {
+  font-size: 16px;
 }
 
 body {
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
 }
 
 header {
   background-image: url(./public/assets/iteration-1/home-banner.png);
-  width: 1920px;
-  height: 1080px;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
   margin: auto;
 }
 .header-logo {
-width: 363px;
-height: 50px;
-top: 56px;
-left: 778px;
-display: flex;
-justify-content: space-around;
-align-items: center;
-justify-content: center;
-margin: 5% auto;
-text-align: center;
-align-content: center;
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem 0;
 }
 .header-content{
-  width: 586px;
-  height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -73,26 +37,20 @@ align-content: center;
   size: 32px;
 }
 .header-content h3 {
-  width: 550px;
-  height: 400px;
+  max-width: 576px;
   font-family: Roboto condensed;
-  font-size: 60px;
-  font-weight: 300;  
-  line-height: 100px;
-  letter-spacing: 1.5px;
+  font-size: 5rem;
+  font-weight: 300;
   text-align: center;
   color: #FFFFFF;
   margin: 0;
 }
 .btn {
-  width: 193.27px;
-  height: 56px;
-  top: 243.27px;
-  left: 196.36px;
-  padding: 3.73px 50.16px 0.27px 49.64px;
+  width: 9rem;
+  height: 4rem;
+  padding: 0rem 1rem 0rem 1rem;
   gap: 0px;
-  border-radius: 50px 50px 50px 50px;
-  opacity: 0px;
+  border-radius: 3rem 3rem 3rem 3rem;
   color: black;
   background-color:#FDC913;
   display: flex;
@@ -100,54 +58,58 @@ align-content: center;
   align-items: center;
 }
 .menu {
-  width: Fixed (1,920px)px;
-  height: Hug (94px)px;
-  top: 1080px;
-  padding: 26px 426px 26px 426px;
-  gap: 10px;
-  opacity: 0px;
+  display: flex;
+  margin: 2rem 12rem;
+}
+.menu-item a img {
+  padding: 0 2.2rem;
 }
 .menu-item {
-  display: flex;
-  width: 1068px;
-  height: 42px;
-  justify-content: space-between;
-  font-size: 18px;
+  font-size: 1.8rem;
 }
-.Lezzetus {
+.Lezzetus{
+  width: 85rem;
+  height: 30rem;
+  display: flex;
+  margin: 6rem 13rem 2rem;
+  gap: 10px;
+}
+.leftside {
   background-image: url(./public/assets/iteration-2/cta/kart-1.png);
-  width: 531px;
-  height: 448.75px;
-  gap: 0px;
-  opacity: 0px;
-  border-radius: 20px 20px 20px 20px;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border-radius: 1rem 1rem 1rem 1rem;
 }
 .baslık-lezzetus {
-  width: 288.18px;
-  height: 148px;
+  width: 2rem;
   gap: 0px;
   opacity: 0px;
   font-family: Quattrocento;
-  font-size: 90px;
+  font-size: 5rem;
   font-weight: 700;
-  line-height: 72px;
+  line-height: 5rem;
   text-align: left;
   color: #FFFFFF;
-  margin: 30px 30px;
+  margin: 30px 30px 20px 30px;
 }
 .baslık-position {
-  width: 350px;
-  height: 27px;
   top: 151.75px;
   left: -10px;
   gap: 0px;
   opacity: 0px;
   font-family: Barlow;
-  font-size: 26px;
-  font-weight: 600;
+  font-size: 1.6rem;
+  font-weight: 800;
   line-height: 26.76px;
   text-align: left;
-  margin: 30px 30px;
+  margin: 0px 30px 20px;
   color: #FFFFFF;
 }
 .btn2 {
@@ -162,68 +124,168 @@ align-content: center;
   margin: 0px 30px;
   color: #CE2829;
 }
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+section {
+  display: flex;
 }
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.rightside {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
 }
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.kart2 {
+  background: url(./public/assets/iteration-2/cta/kart-2.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 50%;
+  border-radius: 1rem 1rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  color: white;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #f7df1eaa);
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+.kart2 h1 {
+  width: 15rem;
+  font-size: 2.7rem;
+  margin: 30px 30px 20px;
   font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
+  line-height: 3.5rem;
 }
-button:hover {
-  border-color: #646cff;
+.kart3 {
+  background: url(./public/assets/iteration-2/cta/kart-3.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 50%;
+  border-radius: 1rem 1rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  color: black;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.kart3 h1 {
+  width: 18rem;
+  font-size: 2.7rem;
+  margin: 30px 30px 30px;
+  font-weight: 550;
+  line-height: 3rem;
 }
+.ozel {
+  color: #D80027;
+}
+.yazı {
+  width: 90rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.yazı h1 {
+  font-family: Satisfy;
+  width: 85rem;
+  font-size: 2rem;
+  font-weight: 590;
+  text-align: center;
+  color: #CE2829;
+  padding: 0;
+  margin: 0 0 0 12rem;
+}
+.yazı h2 {
+  font-family: Barlow;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 56.2px;
+  text-align: center;
+  margin: 1rem 1rem 1rem 12rem;
+}
+.urun {
+  width: 85rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 2rem 3rem 12rem;
+}
+.urun-baslık {
+  font-family: Barlow;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: left;
+  margin: 1rem 0 0;
+}
+.derece {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+.son {
+  background-color: black;
+  display: flex;
+  gap: 8rem;
+}
+.nav-son {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: white;
+}
+.son-a {
+  text-decoration: none;
+  color: white;
+  line-height: 3rem;
+  font-family: Barlow;
+  font-size: 1.3rem;
+  font-weight: 200;
+  text-align: left;
+  margin: 1.5rem;
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+}
+.son-ilk h1 {
+  color: white;
+  width: 8rem;
+  font-family: Londrina Solid;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 3rem;
+  text-align: left;
+  margin: 2rem;
+}
+.son-iki {
+  color: white;
+  margin: 4rem 0;
+}
+.son-iki h1 {
+  margin: 2.5rem 0;
+  font-family: Barlow;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 2rem;
+  text-align: left;
+}
+.son-iki p {
+  font-family: Barlow;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 32.4px;
+  text-align: left;
+
+}
+.son-uc {
+  color: white;
+  width: 25rem;
+  margin: 4rem;
+}
+.son-uc h1 {
+  margin: 2.5rem 0;
+  font-family: Barlow;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 2rem;
+  text-align: left;
+}
+.son-uc img {
+  margin: 0.5rem 0.5rem 0.5rem 0;
 }
