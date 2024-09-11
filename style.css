@@ -1,9 +1,12 @@
-html {
-  font-size: 16px;
-}
-
 body {
   margin: 0;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 960px;
+ 
 }
 
 header {
@@ -59,26 +62,26 @@ header {
 }
 .menu {
   display: flex;
-  margin: 2rem 12rem;
 }
 .menu-item a img {
   padding: 0 2.2rem;
 }
 .menu-item {
-  font-size: 1.8rem;
+  display: flex;
+  justify-content: space-between;
+}
+.menu-item a {
+  display: flex;
+  align-items: center;
 }
 .Lezzetus{
-  width: 85rem;
-  height: 30rem;
   display: flex;
-  margin: 6rem 13rem 2rem;
   gap: 10px;
 }
 .leftside {
   background-image: url(./public/assets/iteration-2/cta/kart-1.png);
   background-size: cover;
   background-position: center;
-  height: 100%;
   width: 100%;
   color: white;
   display: flex;
@@ -87,7 +90,7 @@ header {
   justify-content: flex-start;
   border-radius: 1rem 1rem 1rem 1rem;
 }
-.baslık-lezzetus {
+.baslik-lezzetus {
   width: 2rem;
   gap: 0px;
   opacity: 0px;
@@ -99,7 +102,7 @@ header {
   color: #FFFFFF;
   margin: 30px 30px 20px 30px;
 }
-.baslık-position {
+.baslik-position {
   top: 151.75px;
   left: -10px;
   gap: 0px;
@@ -178,40 +181,34 @@ section {
 .ozel {
   color: #D80027;
 }
-.yazı {
-  width: 90rem;
+.yazi {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.yazı h1 {
+.yazi h1 {
   font-family: Satisfy;
-  width: 85rem;
   font-size: 2rem;
   font-weight: 590;
   text-align: center;
   color: #CE2829;
-  padding: 0;
-  margin: 0 0 0 12rem;
+  margin: 0;
 }
-.yazı h2 {
+.yazi h2 {
   font-family: Barlow;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 600;
   line-height: 56.2px;
   text-align: center;
-  margin: 1rem 1rem 1rem 12rem;
+  margin: 0;
 }
 .urun {
-  width: 85rem;
   display: flex;
   justify-content: space-between;
-  margin: 3rem 2rem 3rem 12rem;
 }
-.urun-baslık {
+.urun-baslik {
   font-family: Barlow;
-  font-size: 2rem;
   font-weight: 600;
   text-align: left;
   margin: 1rem 0 0;
@@ -222,9 +219,13 @@ section {
   margin: 0;
 }
 .son {
-  background-color: black;
+  background-color: #1A1A1A;
   display: flex;
   gap: 8rem;
+}
+.footer-son {
+  display: flex;
+  justify-content: space-between;
 }
 .nav-son {
   display: flex;
@@ -235,19 +236,15 @@ section {
 .son-a {
   text-decoration: none;
   color: white;
-  line-height: 3rem;
+  line-height: 1.5rem;
   font-family: Barlow;
-  font-size: 1.3rem;
   font-weight: 200;
   text-align: left;
-  margin: 1.5rem;
-
 }
 .son-ilk h1 {
   color: white;
   width: 8rem;
   font-family: Londrina Solid;
-  font-size: 50px;
   font-weight: 700;
   line-height: 3rem;
   text-align: left;
@@ -255,19 +252,15 @@ section {
 }
 .son-iki {
   color: white;
-  margin: 4rem 0;
 }
 .son-iki h1 {
-  margin: 2.5rem 0;
   font-family: Barlow;
-  font-size: 2rem;
   font-weight: 500;
   line-height: 2rem;
   text-align: left;
 }
 .son-iki p {
   font-family: Barlow;
-  font-size: 18px;
   font-weight: 200;
   line-height: 32.4px;
   text-align: left;
@@ -286,6 +279,203 @@ section {
   line-height: 2rem;
   text-align: left;
 }
-.son-uc img {
-  margin: 0.5rem 0.5rem 0.5rem 0;
+.footer-icon {
+  background-color: #1A1A1A;
+  display: flex;
+  gap: 8rem;
+  color: white;
+  border-top: solid 1px white;
+}
+@media (max-width: 750px) {
+  .container {
+    max-width: 550px;
+  }
+ 
+  header {
+    background-image: url(./public/assets/iteration-1/home-banner.png);
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  .header-logo img {
+    max-width: 80%;
+    height: auto;
+  }
+  
+  .header-content {
+    margin: 1rem auto;
+    padding: 1rem;
+  }
+
+  .header-content h2 {
+    width: 100%;
+    font-size: 1.25rem;
+    margin: 0.5rem 0; 
+  }
+
+  .header-content h3 {
+    font-size: 2rem;
+    margin: 0.5rem 0;
+  }
+
+  .btn {
+    width: 6rem;
+    height: 2.5rem;
+    font-size: 0.875rem;
+    margin-top: 1rem; 
+  }
+  .menu-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1.5rem;
+  }
+
+  .menu-item a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875rem;
+    padding: 0.5rem;
+  }
+
+  .menu-item a img {
+    margin-right: 0.5rem;
+    width: 1.5rem;
+    height: auto;
+  }
+
+  .Lezzetus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem auto; 
+    width: 90%;
+  }
+
+  .leftside, .rightside {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .leftside {
+    background-image: url(./public/assets/iteration-2/cta/kart-1.png);
+    background-size: cover;
+    background-position: center;
+    padding: 1rem;
+  }
+
+  .rightside {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .kart2, .kart3 {
+    background-size: cover;
+    background-position: center;
+    padding: 1rem;
+    color: white;
+    border-radius: 0.5rem;
+  }
+
+  .kart2 h1, .kart3 h1 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+
+  .ozel {
+    color: #D80027;
+  }
+
+  .yazi {
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 2rem; 
+  }
+
+  .yazi h1 {
+    font-size: 1.25rem;
+    margin: 1rem 0;
+  }
+
+  .yazi h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+
+  .menu-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 3rem;
+  }
+
+  .urun {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .urun > div {
+    width: 100%;
+    margin: 1rem 0;
+    text-align: center;
+  }
+
+  .urun img {
+    width: 100%;
+    height: auto;
+  }
+
+  .urun-baslik {
+    font-size: 1.25rem;
+  }
+
+  .derece h2 {
+    font-size: 0.875rem;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+  }
+
+  .footer-son {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-son {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .son-a {
+    font-size: 0.875rem;
+  }
+  
+  .son-iki h1 {
+    font-size: 1.25rem;
+  }
+
+  .son-iki p {
+    font-size: 0.875rem;
+  }
+
+  .son-uc h1 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
 }
